@@ -37,7 +37,13 @@ services:
     volumes:
       - '.:/nosso_amigo_secreto'
     volumes_from:
-    - box
+      - box
+
+  mailcatcher:
+    image: yappabe/mailcatcher
+    ports:
+      - 1025:1025
+      - 1080:1080
 
   box:
     image: busybox

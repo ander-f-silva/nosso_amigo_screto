@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20180818230218) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "event_hour"
+    t.datetime "event_date"
     t.string   "locale"
     t.index ["user_id"], name: "index_campaigns_on_user_id", using: :btree
   end
